@@ -1,6 +1,7 @@
 // 1. chiedi all’utente il cognome;
 
 var cognome_utente = prompt("Inserisci il tuo cognome");
+cognome_utente = cognome_utente.toLowerCase();
 console.log("Il cognome inserito è: " + cognome_utente);
 
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
@@ -16,4 +17,4 @@ console.log(cognomi_arrey.sort());
 
 
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
-console.log(cognomi_arrey.indexOf(cognome_utente ) + 1);
+console.log(cognomi_arrey.indexOf(cognome_utente) + 1);
