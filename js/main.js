@@ -1,18 +1,17 @@
 // 1. chiedi all’utente il cognome;
+
 var cognome_utente = prompt("Inserisci il tuo cognome");
 console.log("Il cognome inserito è: " + cognome_utente);
 
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
-var cognomi_arrey = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
-console.log("I cognomi dell' array sono: " + cognomi_arrey);
 
+var cognomi_arrey = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 cognomi_arrey.push(cognome_utente);
-console.log("i cognomi dell' array più il tuo sono: " + cognomi_arrey);
-
-
+console.log("I cognomi contenuti nell' array sono: " + cognomi_arrey);
 
 
 // 3. stampa la lista ordinata alfabeticamente
+console.log(cognomi_arrey.sort());
 
 
 
